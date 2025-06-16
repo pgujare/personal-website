@@ -13,7 +13,7 @@ export default function Component() {
           <br />
           {/* <p className="text-xl text-gray-600 mb-6">Growth & Product Management at Ramp</p> */}
           <p className="text-gray-700 leading-relaxed">
-            I have fun when I'm learning new things and working on hard problems. Want to build and invest in things with interesting people and ideas.
+            I have fun when I&apos;m learning new things and working on hard problems. Want to build and invest in things with interesting people and ideas.
             <br />
             <span className="font-medium text-black">Based in New York, NY.</span>
           </p>
@@ -78,7 +78,7 @@ export default function Component() {
           <h2 className="text-2xl font-light mb-6 text-black">Contact</h2>
           <div className="flex gap-6">
             <Link
-              href="mailto:parth.gujare@example.com"
+              href="mailto:parthgujare10@gmail.com"
               className="flex items-center gap-2 text-gray-700 hover:text-black transition-colors"
             >
               <Mail className="h-4 w-4" />
