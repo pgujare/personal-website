@@ -1,6 +1,12 @@
 import { Mail, Linkedin } from "lucide-react"
 import { Analytics } from "@vercel/analytics/next"
 import Link from "next/link"
+import { Metadata } from "next"
+
+export const metadata: Metadata = {
+  title: "Parth Gujare",
+  description: "Parth Gujare's personal website",
+}
 
 export default function Component() {
   return (
