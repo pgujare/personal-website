@@ -1,9 +1,11 @@
 import { Mail, Linkedin } from "lucide-react"
+import { Analytics } from "@vercel/analytics/next"
 import Link from "next/link"
 
 export default function Component() {
   return (
     <div className="min-h-screen bg-white">
+      <Analytics />
       <div className="max-w-2xl mx-auto px-6 py-16">
         {/* Hero */}
         <div className="mb-16">
