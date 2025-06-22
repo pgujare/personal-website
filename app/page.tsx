@@ -62,7 +62,7 @@ export default function Component() {
               <div className="inline-flex items-center gap-2 bg-green-50 hover:bg-green-100 px-4 py-2 rounded-full transition-all duration-200 group cursor-default hover:shadow-sm">
                 <Dumbbell className="h-4 w-4 text-green-500 transition-all duration-200 group-hover:text-green-600 group-hover:scale-110" />
                 <span className="text-sm font-medium text-green-700 group-hover:text-green-800 transition-colors duration-200 tracking-wide">
-                  Barry's
+                  Barry&apos;s
                 </span>
               </div>
               
