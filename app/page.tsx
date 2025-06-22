@@ -1,4 +1,4 @@
-import { Mail, Linkedin, Twitter, Github, ExternalLink, MapPin, Zap, ChefHat, Circle, Music, Dumbbell, Coffee, Building2, TrendingUp, Calculator } from "lucide-react"
+import { Mail, Linkedin, Twitter, Github, ExternalLink, MapPin, Zap, ChefHat, Circle, Music, Dumbbell, Coffee } from "lucide-react"
 import { Analytics } from "@vercel/analytics/next"
 import Link from "next/link"
 import { Metadata } from "next"
@@ -79,14 +79,13 @@ export default function Component() {
         {/* Experience */}
         <div className="mb-20">
           <h2 className="text-2xl font-semibold mb-8 text-black">Experience</h2>
-          <div className="space-y-8">
+          <div className="space-y-12">
             <div className="group hover:bg-gray-50 hover:shadow-sm rounded-lg p-4 -m-4 transition-all duration-300 ease-in-out cursor-default">
               <div className="flex justify-between items-baseline mb-2">
                 <h3 className="text-lg font-medium text-black group-hover:text-gray-900 transition-colors duration-200">Product Manager, Growth</h3>
                 <span className="text-sm font-medium text-gray-500 tracking-wide">2024 - Present</span>
               </div>
-              <div className="flex items-center gap-2 mb-2">
-                <TrendingUp className="h-4 w-4 text-gray-500" />
+              <div className="mb-2">
                 <Link 
                   href="https://ramp.com" 
                   target="_blank" 
@@ -106,8 +105,7 @@ export default function Component() {
                 <h3 className="text-lg font-medium text-black group-hover:text-gray-900 transition-colors duration-200">Associate Consultant</h3>
                 <span className="text-sm font-medium text-gray-500 tracking-wide">2022 - 2024</span>
               </div>
-              <div className="flex items-center gap-2 mb-2">
-                <Building2 className="h-4 w-4 text-gray-500" />
+              <div className="mb-2">
                 <Link 
                   href="https://bain.com" 
                   target="_blank" 
@@ -127,8 +125,7 @@ export default function Component() {
                 <h3 className="text-lg font-medium text-black group-hover:text-gray-900 transition-colors duration-200">Investment Banking</h3>
                 <span className="text-sm font-medium text-gray-500 tracking-wide">2021</span>
               </div>
-              <div className="flex items-center gap-2 mb-2">
-                <Calculator className="h-4 w-4 text-gray-500" />
+              <div className="mb-2">
                 <Link 
                   href="https://jefferies.com" 
                   target="_blank" 
@@ -177,6 +174,12 @@ export default function Component() {
                   My first coding project - built with Next.js, TypeScript, and Tailwind CSS. Learning by building.
                 </p>
               </div>
+              
+              <div className="pt-4">
+                <p className="text-gray-600 text-sm italic">
+                  More projects coming soon as I continue learning and building...
+                </p>
+              </div>
             </div>
           </div>
         </div>
@@ -186,7 +189,14 @@ export default function Component() {
           <h2 className="text-2xl font-semibold mb-8 text-black">Education</h2>
           <div>
             <div className="flex justify-between items-baseline mb-1">
-              <h3 className="text-lg font-medium text-black">University of North Carolina at Chapel Hill</h3>
+              <Link 
+                href="https://unc.edu" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="text-lg font-medium text-black hover:bg-blue-200 px-1 -mx-1 rounded transition-all duration-200"
+              >
+                University of North Carolina at Chapel Hill
+              </Link>
             </div>
             <p className="text-gray-700 leading-relaxed text-sm mt-2">
               B.S. in Business Administration<br />
