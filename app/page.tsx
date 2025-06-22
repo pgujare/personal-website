@@ -1,4 +1,4 @@
-import { Mail, Linkedin, Twitter, Github, ExternalLink, MapPin, Zap, ChefHat, Circle, Music, Dumbbell, Coffee } from "lucide-react"
+import { Mail, Linkedin, Twitter, Github, ExternalLink, MapPin, Zap, ChefHat, Circle, Music, Dumbbell, Coffee, Building2, TrendingUp, Calculator } from "lucide-react"
 import { Analytics } from "@vercel/analytics/next"
 import Link from "next/link"
 import { Metadata } from "next"
@@ -85,7 +85,17 @@ export default function Component() {
                 <h3 className="text-lg font-medium text-black group-hover:text-gray-900 transition-colors duration-200">Product Manager, Growth</h3>
                 <span className="text-sm font-medium text-gray-500 tracking-wide">2024 - Present</span>
               </div>
-              <p className="text-gray-600 mb-2 group-hover:text-gray-700 transition-colors duration-200">Ramp</p>
+              <div className="flex items-center gap-2 mb-2">
+                <TrendingUp className="h-4 w-4 text-gray-500" />
+                <Link 
+                  href="https://ramp.com" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="text-gray-600 group-hover:text-gray-700 transition-all duration-200 hover:bg-yellow-200 px-1 -mx-1 rounded"
+                >
+                  Ramp
+                </Link>
+              </div>
               <p className="text-gray-700 leading-relaxed group-hover:text-gray-800 transition-colors duration-200 text-sm">
                 Building tools to help Ramp acquire more customers
               </p>
@@ -96,7 +106,17 @@ export default function Component() {
                 <h3 className="text-lg font-medium text-black group-hover:text-gray-900 transition-colors duration-200">Associate Consultant</h3>
                 <span className="text-sm font-medium text-gray-500 tracking-wide">2022 - 2024</span>
               </div>
-              <p className="text-gray-600 mb-2 group-hover:text-gray-700 transition-colors duration-200">Bain & Company</p>
+              <div className="flex items-center gap-2 mb-2">
+                <Building2 className="h-4 w-4 text-gray-500" />
+                <Link 
+                  href="https://bain.com" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="text-gray-600 group-hover:text-gray-700 transition-all duration-200 hover:bg-red-100 px-1 -mx-1 rounded"
+                >
+                  Bain & Company
+                </Link>
+              </div>
               <p className="text-gray-700 leading-relaxed group-hover:text-gray-800 transition-colors duration-200 text-sm">
                 Learned how to be a generalist. Spent a lot of time in the Private Equity Group, analyzing potential investments across different industries.
               </p>
@@ -105,9 +125,19 @@ export default function Component() {
             <div className="group hover:bg-gray-50 hover:shadow-sm rounded-lg p-4 -m-4 transition-all duration-300 ease-in-out cursor-default">
               <div className="flex justify-between items-baseline mb-2">
                 <h3 className="text-lg font-medium text-black group-hover:text-gray-900 transition-colors duration-200">Investment Banking</h3>
-                <span className="text-sm font-medium text-gray-500 tracking-wide">2021 - 2021</span>
+                <span className="text-sm font-medium text-gray-500 tracking-wide">2021</span>
               </div>
-              <p className="text-gray-600 mb-2 group-hover:text-gray-700 transition-colors duration-200">Jefferies</p>
+              <div className="flex items-center gap-2 mb-2">
+                <Calculator className="h-4 w-4 text-gray-500" />
+                <Link 
+                  href="https://jefferies.com" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="text-gray-600 group-hover:text-gray-700 transition-all duration-200 hover:bg-gray-200 px-1 -mx-1 rounded"
+                >
+                  Jefferies
+                </Link>
+              </div>
               <p className="text-gray-700 leading-relaxed group-hover:text-gray-800 transition-colors duration-200 text-sm">
                 Did a lot of financial modeling and valuation. Can use excel without a mouse.
               </p>
@@ -121,26 +151,15 @@ export default function Component() {
           <div className="space-y-8">
             <div>
               <p className="text-gray-700 leading-relaxed mb-6">
-                Transitioning from building slides and learning CS theory to building real products. Learning modern development workflows with AI tools like Claude and Cursor. 
-                Particularly interested in building <span className="font-semibold text-black">great AI products</span> - taking models and making them useful for specific tasks. Currently exploring the <span className="font-semibold text-black">sales tech stack</span>.
+                Moving from spreadsheets and presentations to actually building things. Figuring out how to turn AI models into useful products that solve real problems.
               </p>
             </div>
             
-            <div className="space-y-4">
-              <div className="group hover:bg-gray-50 hover:shadow-sm rounded-lg p-4 -m-4 transition-all duration-300 ease-in-out cursor-default">
-                <div className="flex items-center gap-2 mb-2">
-                  <h3 className="text-lg font-medium text-black group-hover:text-gray-900 transition-colors duration-200">This Website</h3>
-                  <ExternalLink className="h-5 w-5 text-gray-500 group-hover:text-gray-600 transition-colors duration-200" />
-                </div>
-                <p className="text-gray-700 leading-relaxed group-hover:text-gray-800 transition-colors duration-200 text-sm">
-                  My first coding project - built with Next.js, TypeScript, and Tailwind CSS. Learning by building.
-                </p>
-              </div>
-              
-              <div className="pt-2">
+            <div className="space-y-6">
+              <div>
                 <Link
                   href="https://github.com/pgujare"
-                  className="flex items-center gap-2 text-gray-700 hover:text-black transition-all duration-200 hover:translate-x-1 font-medium text-base"
+                  className="flex items-center gap-2 text-gray-700 hover:text-black transition-all duration-200 hover:translate-x-1 font-medium text-base mb-6"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
@@ -149,9 +168,13 @@ export default function Component() {
                 </Link>
               </div>
               
-              <div className="pt-2">
-                <p className="text-gray-600 text-sm italic">
-                  More projects coming soon as I continue learning and building...
+              <div className="group hover:bg-gray-50 hover:shadow-sm rounded-lg p-4 -m-4 transition-all duration-300 ease-in-out cursor-default">
+                <div className="flex items-center gap-2 mb-2">
+                  <h3 className="text-lg font-medium text-black group-hover:text-gray-900 transition-colors duration-200">This Website</h3>
+                  <ExternalLink className="h-5 w-5 text-gray-500 group-hover:text-gray-600 transition-colors duration-200" />
+                </div>
+                <p className="text-gray-700 leading-relaxed group-hover:text-gray-800 transition-colors duration-200 text-sm">
+                  My first coding project - built with Next.js, TypeScript, and Tailwind CSS. Learning by building.
                 </p>
               </div>
             </div>
